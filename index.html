@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>MUSIC ISLAND</title>
+    <style>
+      @font-face {
+        font-family: PressStart2P;
+        src: url('/public/font/PressStart2P-Regular.ttf')
+      }
+
+      body { 
+        margin: 0; 
+        overflow: hidden; }
+        canvas { display: block; }
+          body.hovering { cursor:pointer; }
+            #guide-image {
+              position: absolute;
+              bottom: 2rem;
+              left: 2rem;
+              width: 30rem;
+              pointer-events: none;
+              z-index: 10;
+            }
+
+            #welcome {
+              background-color: transparent;
+              position: absolute;
+              color: white;
+              padding-left: 2rem;
+              margin-top: 2rem;
+              width: 60rem;
+              font-family: PressStart2P;
+              line-height: 3rem;
+              font-size: 1.7rem;
+            }
+
+            #rec {
+              background-color: transparent;
+              position:absolute;
+              color: white;
+              padding-left: 2rem;
+              margin-top: 20rem;
+              font-family: PressStart2P;
+              font-size: 0.8rem;
+              width: 40rem;
+            }
+
+            #rec-line {
+              background-color: transparent;
+              position:absolute;
+              color: white;
+              padding-left: 2rem;
+              margin-top: 22rem;
+              font-family: PressStart2P;
+              font-size: 0.8rem;
+              width: 50rem;
+            }
+
+            #visualization {
+              background-color: transparent;
+              
+              position:absolute;
+              bottom: 29rem;
+              left: 2rem;
+              height:10rem;
+              width: 30rem;
+              
+              border-color: white;
+              border-style: solid;
+              border-width:thick ;
+              border-radius: 20px;
+              
+              color: white;
+            }
+
+            #visualization-text {
+              font-family: PressStart2P;
+              font-size: 0.75rem;
+              line-height: 2rem;
+              margin-top: 3rem;
+              text-align: center;
+            }
+    </style>
+  </head>
+  <body>
+    <h1 id="welcome">Hi, welcome to the "Music Mixer Island!". Click the buttons one at a time to build dynamic compositions. And have fun!</h1>
+    <h1 id="rec">Recomendation for a fun composition:</h1>
+    <h1 id="rec-line">PERC + SYNTH -> KICK + FX -> SNARE + BASS</h1>
+    <div id="visualization">
+      <h1 id="visualization-text">Imagine a cool visualization here. inDev!</h1>
+    </div>
+    <img id="guide-image" src="/png/specs.png" alt="radio guide">
+    <script type="module" src="/src/main.js"></script>
+
+  </body>
+</html>
+    
